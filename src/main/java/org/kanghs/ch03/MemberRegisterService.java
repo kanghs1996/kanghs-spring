@@ -17,9 +17,13 @@ public class MemberRegisterService {
 	static Logger logger = LogManager.getLogger();
 	
 	//property memberDao setter
-		//setter method for DI
-		public void setMemberDao(MemberDao memberDao) {
+	//setter method for DI
+	public void setMemberDao(MemberDao memberDao) {
 			this.memberDao = memberDao;
+	}
+	
+	public MemberRegisterService() {
+		
 	}
 
 	/**

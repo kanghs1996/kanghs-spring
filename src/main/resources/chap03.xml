@@ -10,17 +10,18 @@
 	<bean id="memberDao" class="org.kanghs.ch03.MemberDao" />
 
 	<!-- dependency injection by constructor -->
+	<!--    
 	<bean id="memberRegisterService"
 		class="org.kanghs.ch03.MemberRegisterService">
 		<constructor-arg ref="memberDao" />  
 	</bean>
-
+	-->
 	<!-- dependency injection by setter -->
-	<!--  	 
+	    	 
 	<bean id="memberRegisterService"
 		class="org.kanghs.ch03.MemberRegisterService">
 		<property name="memberDao" ref="memberDao"/>
-	</bean>-->
+	</bean>
 	
 </beans>
 
