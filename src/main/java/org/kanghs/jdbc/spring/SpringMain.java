@@ -2,7 +2,7 @@ package org.kanghs.jdbc.spring;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
-
+//aa
 public class SpringMain {
 
 	public static void main(String[] args) {
