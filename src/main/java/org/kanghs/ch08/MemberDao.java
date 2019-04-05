@@ -3,6 +3,7 @@ package org.kanghs.ch08;
 import java.util.List;
 
 import org.kanghs.ch03.Member;
+import org.springframework.stereotype.Repository;
 
 /**
  * p.184 [리스트 8.2] MemberDao 를 interface로 수정<br>
@@ -11,6 +12,7 @@ import org.kanghs.ch03.Member;
  * @author kanghs
  *
  */
+@Repository
 public interface MemberDao {
 
 	/**

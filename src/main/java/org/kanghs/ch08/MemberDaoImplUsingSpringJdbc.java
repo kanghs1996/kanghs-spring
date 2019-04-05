@@ -3,18 +3,21 @@ package org.kanghs.ch08;
 import java.util.List;
 
 import org.kanghs.ch03.Member;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
+import org.springframework.stereotype.Repository;
 
 /**
  * 인터페이스 MemberDao의 구현체. SpringJdbc를 사용해서 구현
  * 
  * @author kanghs
  */
+@Repository
 public class MemberDaoImplUsingSpringJdbc implements MemberDao {
 
-
+	
 	static final String SELECT_BY_EMAIL = "SELECT memberId, email, name FROM member WHERE email=?";
 
 	static final String INSERT = "INSERT member(email, password, name) VALUES(?, sha2(?,256), ?)";
@@ -22,9 +25,9 @@ public class MemberDaoImplUsingSpringJdbc implements MemberDao {
 	static final String UPDATE = "UPDATE member SET email=?, password=sha2(?,256), name=? WHERE memberId=?";
 
 	static final String SELECT_ALL = "SELECT memberId, email, name FROM member ORDER BY memberId desc LIMIT ?,?";
-
+	@Autowired
 	JdbcTemplate jdbcTemplate;
-
+	
 	/**
 	 * jdbcTemplate setter for injection
 	 */
