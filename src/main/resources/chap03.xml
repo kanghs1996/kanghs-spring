@@ -10,14 +10,22 @@
 	<bean id="memberDao" class="org.kanghs.ch03.MemberDao" />
 
 	<!-- dependency injection by constructor -->
+<<<<<<< HEAD
 	<!--  
+=======
+	<!--    
+>>>>>>> ccb74b5e6b75c3a41744684f0d3b98f92299761a
 	<bean id="memberRegisterService"
 		class="org.kanghs.ch03.MemberRegisterService">
 		<constructor-arg ref="memberDao" />  
 	</bean>
 	-->
 	<!-- dependency injection by setter -->
+<<<<<<< HEAD
 	  	 
+=======
+	    	 
+>>>>>>> ccb74b5e6b75c3a41744684f0d3b98f92299761a
 	<bean id="memberRegisterService"
 		class="org.kanghs.ch03.MemberRegisterService">
 		<property name="memberDao" ref="memberDao"/>
