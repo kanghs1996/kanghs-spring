@@ -26,8 +26,8 @@ dependencies {
 	implementation 'org.springframework:spring-jdbc:5.+'
 	
 	// log4j 2	
-	//implementation 'org.apache.logging.log4j:log4j-api:2.+'
-	//implementation 'org.apache.logging.log4j:log4j-core:2.+'
+	implementation 'org.apache.logging.log4j:log4j-api:2.+'
+	implementation 'org.apache.logging.log4j:log4j-core:2.+'
 }
 
 task runExampleMain(type: JavaExec) {
@@ -48,5 +48,20 @@ task runNormalMain(type: JavaExec) {
 
 task runSpringMain(type: JavaExec) {
 	main = 'org.kanghs.jdbc.spring.SpringMain'
+	classpath =  sourceSets.main.runtimeClasspath
+}
+
+task runMemberMain(type: JavaExec) {
+	main = 'org.kanghs.ch03.MemberMain'
+	classpath =  sourceSets.main.runtimeClasspath
+}
+
+task runMemberMainUsingSpring(type: JavaExec) {
+	main = 'org.kanghs.ch03.MemberMainUsingSpring'
+	classpath =  sourceSets.main.runtimeClasspath
+}
+
+task runMemberMainUsingComponentScan(type: JavaExec) {
+	main = 'org.kanghs.ch04.MemberMainUsingComponentScan'
 	classpath =  sourceSets.main.runtimeClasspath
 }
