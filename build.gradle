@@ -60,11 +60,8 @@ task runMemberMainUsingSpring(type: JavaExec) {
 	main = 'org.kanghs.ch03.MemberMainUsingSpring'
 	classpath =  sourceSets.main.runtimeClasspath
 }
-<<<<<<< HEAD
 
 task runMemberMainUsingComponentScan(type: JavaExec) {
 	main = 'org.kanghs.ch04.MemberMainUsingComponentScan'
 	classpath =  sourceSets.main.runtimeClasspath
 }
-=======
->>>>>>> ccb74b5e6b75c3a41744684f0d3b98f92299761a
