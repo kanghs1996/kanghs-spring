@@ -1,1 +1,1 @@
-packageSearchIndex = [{"l":"All Packages","url":"allpackages-index.html"},{"l":"org.kanghs.ch03"},{"l":"org.kanghs.ch04"},{"l":"org.kanghs.ch08"},{"l":"org.kanghs.example"},{"l":"org.kanghs.jdbc.spring"}]
+packageSearchIndex = [{"l":"All Packages","url":"allpackages-index.html"},{"l":"org.kanghs.article"},{"l":"org.kanghs.ch03"},{"l":"org.kanghs.ch04"},{"l":"org.kanghs.ch08"},{"l":"org.kanghs.example"},{"l":"org.kanghs.jdbc.spring"}]
